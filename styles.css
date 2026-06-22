@@ -89,6 +89,7 @@ a {
 }
 
 .hamburger {
+    margin-right: 10px;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -547,9 +548,26 @@ iframe {
     padding-top: 15px;
     padding-bottom: -5px;
 }
+/* Contenedor central reutilizable */
 .container {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5rem;
+}
+@media (max-width: 768px) {
+  
+  .contenedor-sucursales {
+    flex-direction: column; /* Cambiamos la fila por una columna */
+    align-items: center;    /* Centramos las tarjetas en la pantalla */
+    gap: 20px;              /* Mantenemos un espacio agradable entre tarjeta y tarjeta */
+  }
+
+  .sucursal {
+    width: 90%;             /* Hacemos que la tarjeta ocupe casi todo el ancho del celular para aprovechar el espacio */
+    max-width: 400px;       /* Le ponemos un límite para que no se estiren demasiado en tablets */
+  }
+  a {
+    padding-left: 10px;
+  }
 }
