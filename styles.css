@@ -81,6 +81,7 @@ a {
 .nav-links {
     display: flex;
     gap: 1.5rem;
+    margin-left: 10px;
 }
 
 /* Hamburguesa – oculta en desktop */
